@@ -1,8 +1,9 @@
 const state = {
   questions: [],
   currentIndex: 0,
-  score: 0,               
-  hasAnswered: false,     
+  score: 0,
+  hasAnswered: false,
+  currentQuestion: null,
 };
 
 const dom = {
@@ -56,8 +57,22 @@ function showScreen(screenName) {
   if (screenName === "result") dom.resultScreen.classList.remove("hidden");
 }
 
+function shuffleQuestion(original) {
+  const indices = original.answers.map((_, i) => i);
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+  return {
+    ...original,
+    answers: indices.map((i) => original.answers[i]),
+    correctIndex: indices.indexOf(original.correctIndex),
+  };
+}
+
 function showQuestion() {
-  const question = state.questions[state.currentIndex];
+  const question = shuffleQuestion(state.questions[state.currentIndex]);
+  state.currentQuestion = question;
   state.hasAnswered = false;
 
   dom.questionText.textContent = question.question;
@@ -84,7 +99,7 @@ function handleAnswer(selectedIndex) {
   if (state.hasAnswered) return;
   state.hasAnswered = true;
 
-  const question = state.questions[state.currentIndex];
+  const question = state.currentQuestion;
   const isCorrect = selectedIndex === question.correctIndex;
 
   if (isCorrect) {
