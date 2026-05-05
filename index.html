@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Quiz - Sprawdź swoją wiedzę o cyberbezpieczeństwie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+>
+  <main class="app">
+
+    <header class="app__header">
+      <h1 class="app__title">Cyber Quiz</h1>
+      <p class="app__subtitle">Sprawdź swoją wiedzę o cyberbezpieczeństwie</p>
+    </header>
+
+    <section id="start-screen" class="screen">
+      <h2 class="screen__heading">Witaj!</h2>
+      <p class="screen__text">
+        Czeka na Ciebie 10 pytań z zakresu cyberbezpieczeństwa.
+        Po każdej odpowiedzi otrzymasz wyjaśnienie. Powodzenia!
+      </p>
+      <button id="start-btn" class="btn btn--primary">Rozpocznij quiz</button>
+    </section>
+
+    <section id="question-screen" class="screen hidden">
+
+      <div class="progress">
+        <div class="progress__info">
+          <span id="question-counter">Pytanie 1 z 10</span>
+          <span id="progress-percent">10%</span>
+        </div>
+        <div class="progress__bar">
+          <div id="progress-fill" class="progress__fill"></div>
+        </div>
+      </div>
+
+      <h2 id="question-text" class="question">Tutaj pojawi się pytanie</h2>
+
+      <div id="answers-container" class="answers"></div>
+
+      <div id="feedback" class="feedback hidden">
+        <p id="feedback-text" class="feedback__text"></p>
+        <button id="next-btn" class="btn btn--primary">Następne pytanie</button>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen hidden">
+      <h2 class="screen__heading">Quiz zakończony!</h2>
+      <div class="result">
+        <p class="result__score">
+          Twój wynik: <span id="final-score">0</span> / 10
+        </p>
+        <p id="result-grade" class="result__grade">Ocena słowna</p>
+      </div>
+      <button id="restart-btn" class="btn btn--primary">Spróbuj ponownie</button>
+    </section>
+
+    <footer class="app__footer">
+      <p>
+        Projekt zaliczeniowy &middot;
+        <a href="https://github.com/KasiaJack/cyber-quiz" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
