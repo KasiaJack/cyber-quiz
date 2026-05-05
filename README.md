@@ -36,27 +36,6 @@ Każde pytanie posiada wyjaśnienie poprawnej odpowiedzi, oparte na materiałach
 - Restart quizu z losową kolejnością pytań
 - Responsywny design (działa na mobile i desktop)
 
-##Uruchomienie lokalne
-
-\`\`\`bash
-git clone https://github.com/KasiaJack/cyber-quiz.git
-cd cyber-quiz
-\`\`\`
-
-Otwórz `index.html` przez rozszerzenie **Live Server** w VS Code.
-
-##Struktura projektu
-
-\`\`\`
-cyber-quiz/
-├── index.html          # Struktura strony
-├── style.css           # Stylowanie (motyw cyber dark)
-├── script.js           # Logika quizu
-├── data/
-│   └── questions.json  # Baza pytań
-└── assets/             # Zasoby graficzne
-\`\`\`
-
 ##Autor
 
 Katarzyna Jackowska - [@KasiaJack](https://github.com/KasiaJack)
