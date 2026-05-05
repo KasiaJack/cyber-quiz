@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "category": "phishing",
+    "question": "Co to jest phishing?",
+    "answers": [
+      "Rodzaj wirusa komputerowego szyfrującego dysk",
+      "Wyłudzanie danych przez podszywanie się pod zaufaną instytucję",
+      "Atak polegający na przeciążeniu serwera",
+      "Technika łamania haseł metodą siłową"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phishing to atak socjotechniczny, w którym atakujący podszywa się pod zaufany podmiot (bank, kuriera, znajomego), aby skłonić ofiarę do podania danych logowania, kliknięcia w złośliwy link lub pobrania załącznika. To najpopularniejszy wektor ataku w 2026 roku."
+  },
+  {
+    "id": 2,
+    "category": "passwords",
+    "question": "Które z tych haseł jest najsilniejsze?",
+    "answers": [
+      "Qwerty123!",
+      "ImieNazwisko1990",
+      "k7$Mq2#vP9!nL4@bT",
+      "MojeUlubioneHaslo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Silne hasło to losowy ciąg znaków o długości min. 12 znaków, zawierający duże i małe litery, cyfry oraz znaki specjalne. Hasła oparte na danych osobowych lub słownikowych są łatwe do złamania w atakach słownikowych. Najlepiej używać menedżera haseł (np. Bitwarden, KeePass)."
+  },
+  {
+    "id": 3,
+    "category": "mfa",
+    "question": "Co to jest uwierzytelnianie dwuskładnikowe (2FA)?",
+    "answers": [
+      "Logowanie przy użyciu dwóch różnych haseł",
+      "Logowanie wymagające dwóch niezależnych metod weryfikacji tożsamości",
+      "Funkcja zapamiętywania haseł w przeglądarce",
+      "Szyfrowanie hasła algorytmem dwustopniowym"
+    ],
+    "correctIndex": 1,
+    "explanation": "2FA (Two-Factor Authentication) to mechanizm bezpieczeństwa, który wymaga dwóch niezależnych dowodów tożsamości - typowo coś co znasz (hasło) + coś co masz (kod z aplikacji typu Google Authenticator lub klucz sprzętowy). Nawet jeśli atakujący wykradnie hasło, nie zaloguje się bez drugiego składnika."
+  },
+  {
+    "id": 4,
+    "category": "malware",
+    "question": "Co to jest ransomware?",
+    "answers": [
+      "Program szyfrujący pliki ofiary i żądający okupu za ich odszyfrowanie",
+      "Wirus rozsyłający spam z zainfekowanego komputera",
+      "Oprogramowanie wykradające dane logowania do banku",
+      "Złośliwa reklama wyświetlająca się w przeglądarce"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ransomware to typ złośliwego oprogramowania, które szyfruje pliki ofiary i żąda okupu (zwykle w kryptowalutach) za ich odszyfrowanie. Najbardziej znane przykłady to WannaCry (2017) i LockBit. Najlepszą ochroną są regularne kopie zapasowe trzymane offline."
+  },
+  {
+    "id": 5,
+    "category": "network_security",
+    "question": "Czy bezpiecznie jest korzystać z publicznego WiFi w kawiarni do logowania do bankowości?",
+    "answers": [
+      "Tak, jeśli sieć ma silne hasło",
+      "Tak, ale tylko z tabletu",
+      "Nie, chyba że używamy VPN",
+      "Tak, bezpieczeństwo zapewnia HTTPS"
+    ],
+    "correctIndex": 2,
+    "explanation": "Publiczne sieci WiFi są podatne na ataki Man-in-the-Middle (MITM), gdzie atakujący w tej samej sieci może przechwytywać ruch. Choć HTTPS szyfruje treść, metadane (jakie strony odwiedzasz) mogą być widoczne. VPN tworzy szyfrowany tunel, który chroni cały ruch sieciowy."
+  },
+  {
+    "id": 6,
+    "category": "social_engineering",
+    "question": "Otrzymujesz mail od 'prezesa firmy' z pilną prośbą o przelew. Co robisz?",
+    "answers": [
+      "Wykonuję przelew - to przecież szef",
+      "Zadzwonię do prezesa znanym numerem, żeby potwierdzić",
+      "Odpowiadam na maila z prośbą o potwierdzenie",
+      "Klikam w link w mailu, żeby zobaczyć szczegóły"
+    ],
+    "correctIndex": 1,
+    "explanation": "To klasyczny atak typu CEO fraud (lub BEC - Business Email Compromise). Atakujący podszywa się pod prezesa firmy, używając pilności i autorytetu, aby wymusić szybką decyzję. Zawsze weryfikuj takie prośby drugim, niezależnym kanałem (telefon na znany numer, osobiście) - nie odpowiadając na samego maila."
+  },
+  {
+    "id": 7,
+    "category": "passwords",
+    "question": "Czy można używać tego samego hasła w kilku serwisach?",
+    "answers": [
+      "Tak, jeśli hasło jest silne",
+      "Tak, ale tylko w zaufanych serwisach",
+      "Nie - jeden wyciek oznacza utratę dostępu wszędzie",
+      "Tak, jeśli się je regularnie zmienia"
+    ],
+    "correctIndex": 2,
+    "explanation": "Używanie tego samego hasła w wielu serwisach to jedno z największych zagrożeń. Jeśli jeden serwis zostanie zhakowany (a to się dzieje regularnie - sprawdź haveibeenpwned.com), atakujący spróbują tych samych danych w innych serwisach (atak credential stuffing). Każdy serwis powinien mieć unikalne hasło - menedżer haseł to umożliwia."
+  },
+  {
+    "id": 8,
+    "category": "phishing",
+    "question": "Po czym najłatwiej rozpoznać podejrzanego maila phishingowego?",
+    "answers": [
+      "Mail jest napisany w języku polskim",
+      "Wzywa do natychmiastowego działania pod groźbą konsekwencji",
+      "Pochodzi od znanej firmy",
+      "Zawiera załącznik PDF"
+    ],
+    "correctIndex": 1,
+    "explanation": "Atakujący wykorzystują presję czasu i strach jako narzędzia manipulacji. Typowe sformułowania to 'Twoje konto zostanie zablokowane w ciągu 24h', 'Pilnie zweryfikuj dane'. Inne sygnały ostrzegawcze: błędy językowe, podejrzane domeny (np. paypa1.com zamiast paypal.com), prośby o kliknięcie w link lub podanie danych. Zawsze sprawdzaj nadawcę i nigdy nie klikaj w linki - wpisz adres ręcznie w przeglądarce."
+  },
+  {
+    "id": 9,
+    "category": "data_protection",
+    "question": "Co zrobić, gdy dowiesz się, że Twoje dane wyciekły z jakiegoś serwisu?",
+    "answers": [
+      "Nic - to już się stało, nic nie zmienię",
+      "Natychmiast zmienić hasło w tym serwisie i wszędzie, gdzie używałam tego samego",
+      "Założyć nowe konto e-mail",
+      "Skasować konto na zawsze"
+    ],
+    "correctIndex": 1,
+    "explanation": "Po wycieku należy: (1) natychmiast zmienić hasło w tym serwisie, (2) zmienić hasło w każdym innym serwisie, gdzie używałam tego samego hasła, (3) włączyć 2FA jeśli jeszcze nie jest aktywne, (4) monitorować konto pod kątem podejrzanych aktywności. Strona haveibeenpwned.com pozwala sprawdzić, w których wyciekach pojawił się Twój e-mail."
+  },
+  {
+    "id": 10,
+    "category": "malware",
+    "question": "Pobierasz program z internetu. Skąd najbezpieczniej?",
+    "answers": [
+      "Z pierwszej strony w wynikach Google",
+      "Z oficjalnej strony producenta lub zaufanego repozytorium",
+      "Z pliku przesłanego przez znajomego",
+      "Z portalu z 'darmowymi programami'"
+    ],
+    "correctIndex": 1,
+    "explanation": "Najbezpieczniejsze źródła oprogramowania to: oficjalne strony producentów, oficjalne sklepy aplikacji (Microsoft Store, Apple App Store), zaufane repozytoria (np. apt na Linuksie, Homebrew na Macu, winget na Windows). Strony z 'darmowymi' wersjami płatnego oprogramowania często zawierają trojany lub adware. Reklamy w wynikach Google bywają fałszywe - zawsze sprawdzaj domenę."
+  }
+]
