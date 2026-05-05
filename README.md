@@ -38,4 +38,4 @@ Każde pytanie posiada wyjaśnienie poprawnej odpowiedzi, oparte na materiałach
 
 ##Autor
 
-Katarzyna Jackowska - [@KasiaJack](https://github.com/KasiaJack)
+Katarzyna Jackowska
